@@ -1,0 +1,328 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+@media screen and (min-width: 830px) {
+
+  .bg-1 {
+
+    display: none;
+  }
+
+
+  body {
+
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 18%, rgba(0, 212, 255, 1) 100%);
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    scroll-behavior: auto !important;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container1 {
+    transform: scale(0.9);
+    width: 800px;
+    height: 800px;
+    box-sizing: border-box;
+    margin: 15px;
+  }
+
+  .Circle1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f1c40f #e74c3c #9b59b6 #2ecc71;
+    box-sizing: border-box;
+    background: #262626;
+  }
+
+  /* Home Button */
+  .InnerCircle1 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+    width: calc(20% + 28%);
+    height: calc(20% + 28%);
+    border-radius: 50%;
+    border: 6px solid;
+    border-color: #09863d #5b1779 #a71d10 #856c0c;
+    background: url(../HomeIdle.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: .2s ease;
+  }
+
+  .InnerCircle1:hover {
+    scale: 0.99;
+    background-size: 100%;
+  }
+
+  .InnerCircle1:active {
+    scale: 0.97;
+    background-size: 100%;
+  }
+
+  .Home {
+    position: absolute;
+    font-weight: bold;
+    font-size: 54px;
+    top: 38%;
+    left: 17%;
+  }
+
+  .Home a {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  /* =========================================================== */
+
+
+  /* LogIn button */
+  .up {
+    position: absolute;
+    top: -8px;
+    left: 110px;
+    width: 71%;
+    height: 35%;
+    background-repeat: no-repeat;
+    background: url(../try1.png);
+    transition: .2s ease;
+  }
+
+  .up:hover {
+    top: -11px;
+  }
+
+  .up:active {
+    top: -6px;
+  }
+
+  /* ========================================================= */
+
+
+  /* About Button*/
+  .right {
+    position: absolute;
+    transform: rotate(0deg);
+    top: 115px;
+    right: -6px;
+    width: 35%;
+    height: 71%;
+    background-repeat: no-repeat;
+    background: url(../try2.png);
+    transition: .2s ease;
+
+
+  }
+
+  .right:hover {
+    right: -9px;
+  }
+
+  .right:active {
+    right: -4px;
+  }
+
+  /* =========================================================== */
+
+
+  /* JoinUs Button */
+  .down {
+    position: absolute;
+    transform: rotate(0deg);
+    bottom: -14px;
+    left: 110px;
+    width: 72%;
+    height: 36%;
+    background-repeat: no-repeat;
+    background: url(../try3.png);
+    transition: .2s ease;
+  }
+
+  .down:hover {
+    bottom: -17px;
+  }
+
+  .down:active {
+    bottom: -12px;
+  }
+
+  /* =========================================================== */
+
+
+  /* Register Button */
+  .left {
+    position: absolute;
+    transform: rotate(0deg);
+    top: 112px;
+    left: -10px;
+    width: 36%;
+    height: 71%;
+    background-repeat: no-repeat;
+    background: url(../try4.png);
+    transition: .2s ease;
+
+  }
+
+  .left:hover {
+    left: -13px;
+  }
+
+  .left:active {
+    left: -8px;
+  }
+
+
+
+  /* =========================================================== */
+
+
+  /* Footer */
+  footer {
+    position: fixed;
+    border-style: solid;
+    border-width: 5px;
+    border-style: hidden;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    opacity: 0.3;
+  }
+
+  footer p {
+    display: block;
+  }
+
+}
+
+/* =========================================================== */
+
+/* =========================================================== */
+@media all and (max-width: 829px) {
+
+
+  body {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 18%, rgba(0, 212, 255, 1) 100%);
+  }
+
+  .container1 {
+    display: none;
+  }
+
+  .bg-1 {
+
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgb(2, 0, 36) 0%, rgba(9, 9, 121, 1) 18%, rgba(0, 212, 255, 1) 100%);
+
+  }
+
+  .container {
+    margin-top: 10px;
+    background-color: white;
+    max-height: 1048px;
+    border-radius: 5px;
+  }
+
+  .row {
+    padding: 0px;
+    max-height: 262px;
+  }
+
+  .thumbnail {
+    padding: 0px;
+    border-style: none;
+    box-shadow: 2px 2px 5px #000000;
+    margin: 0px;
+  }
+
+  .thumbnail:hover {
+    background: midnightblue;
+    padding: 3px;
+
+  }
+
+  .img-rounded {
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .img-rounded2 {
+    border-radius: 0px 0px 5px 5px;
+  }
+
+
+  .col-md-1 {
+
+    max-height: 262px;
+    padding-right: 0px;
+    padding-left: 0px;
+    box-shadow: 1px 5px 5px rgb(167, 163, 163);
+    border-radius: 5px;
+  }
+
+
+  /* =========================================================== */
+
+
+  /* Footer */
+  footer {
+    position: fixed;
+    border-style: solid;
+    border-width: 5px;
+    border-style: hidden;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #262626;
+    color: white;
+    text-align: center;
+    opacity: 0.3;
+  }
+
+  footer p {
+    display: block;
+  }
+
+}
+
+/* =========================================================== */
+
+@media all and (max-width: 684px) {
+  .row {
+    padding: 0px;
+    max-height: 230px;
+
+  }
+}
+
+@media all and (max-width: 339px) {
+  .row {
+    padding: 0px;
+    max-height: 115px;
+
+  }
+}
