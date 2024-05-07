@@ -1,27 +1,66 @@
-<!doctype HTML>
-
+<!DOCTYPE HTML>
 <html >
 <head>
 <title>CoreOfTheHorizon</title>
 <link rel="stylesheet" href="css/MainPage.css">
 <meta charset="utf-8">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
     <!-- Centering the circle in a main div -->
-    <div class="container">
+    <div class="container1">
       <!-- a second div to for the outer circle -->
-        <a href=""><div class="Circle1"></a>
-        <a href="login.html"><div class="up"></div></a>
-        <a href="#"  onclick="clicked1();"><div class="left"></div></a>
-        <a href="#"  onclick="clicked2();"><div class="right"></div></a>
-        <a href="About.HTML"><div class="down"></div></a>
+        <a href=""><div class="Circle1"></div></a>
+        <a onclick="playClick('loginpage.html')" ><div class="up"></div></a>
+        <a href="#" onclick="clicked1();"><div class="left"></div></a>
+        <a href="#" onclick="clicked2();"><div class="right"></div></a>
+        <a onclick="playClick('About.html')" ><div class="down"></div></a>
 
         <!-- inner div inside "Circle1" div, this represents the inner circle -->
-        <a href="index.html" ><div class="InnerCircle"></div></a>
+        <a href="#" onclick="playJump();"><div class="InnerCircle1"></div></a>
     </div>
 
+    
+<div class="bg-1">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-1" >
+                <div class="thumbnail" >
+                    <a href="loginpage.html"><img src="BoxLoginIdle.png" alt="Login" class="img-rounded"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-1">
+                <div class="thumbnail">
+                    <a href="#"><img src="BoxRegisterIdle.png" alt="Register"></a>
+                </div>
+            </div>
+        </div>  
+
+        <div class="row">
+            <div class="col-md-1">
+                <div class="thumbnail">
+                    <a href="#"><img src="BoxJoinUsIdle.png" alt="Join"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-1">
+                <div class="thumbnail" >
+                   <a href="about.html" class="about"><img src="BoxAboutIdle.png" alt="About" class="img-rounded2" ></a>
+                </div>
+                
+            </div>
+           
+        </div> 
+                 
+    </div>    
+</div> 
 <script language="javascript">
 function clicked1()
 {
@@ -31,15 +70,26 @@ function clicked2()
 {
     alert("Login form is not ready yet")
 }
+
+
+function playJump() {
+    const auddio = new Audio("./audio/Jump3.wav");
+    auddio.play();
+} 
+
+function playClick(url) {
+    const auddio = new Audio("./audio/نقرة الفأرة.wav");
+    auddio.play();
+    setTimeout(function (){
+        window.location.href = url;
+    }, 300);
+} 
 </script>
     <footer>
       <p>Copy Rights® Reserved</P>
       <p>Designed by OsaidM</p>
     </footer>
   </div>
-
-
-
 
 </body>
 </html>

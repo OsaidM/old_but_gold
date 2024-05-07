@@ -1,124 +1,23 @@
-body
-{
-    font: 15px/1.5 Arial,Helvetica,sans-serif;
-    padding:0;
-    margin:0;
-    background-image: url("https://wallpaperscraft.com/image/street_city_evening_black_white_lights_buildings_hdr_25485_1920x1080.jpg");
-    background-size:cover;
+.login-block{
+background: #DE6262;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+float:left;
+width:100%;
+padding : 50px 0px;
 }
-
-header
-{
-
-  background:#35424a;
-  color:#ffffff;
-  padding-top:30px;
-  padding-bottom:30px;
-  text-align: center;
-  text-shadow: 5px 5px 10px black;
-  min-height:70px;
-  border-bottom:#e8491d 3px solid;
-
-
-
-    z-index: -1; /* hide shadow behind image */
-    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-
-     /* one half of the remaining 30% */
-    height: 100px;
-
-}
-
-header a
-{
-  color:#ffffff;
-  text-decoration:none;
-  text-transform:uppercase;
-  font-size:16px;
-}
-
-
-/* Container */
-.container
-{
-  /*float:left;*/
-  margin-top:5%;
-
-  width:50%;
-  margin-left: 25%;
-  margin-right:25%;
-  margin-bottom:auto;
-  overflow:hidden;
-  box-sizing: border-box;
-    border: 2px solid #ccc;
-  box-shadow: 0 4px 8px 0;
-  border-radius: 8px;
-
-
-
-}
-/* =========================================================== */
-input
-{
-  padding: 2%;
-  margin:1.5%;
-  margin-left:2.5%;
-  width:95%;
-  opacity: 0.8;
-  border-radius: 4px;
-}
-input[type=text]
-{
-  box-sizing: border-box;
-    border: 2px solid #ccc;
-
-    font-size: 16px;
-
-
-}
-input[type=password]
-{
-  box-sizing: border-box;
-    border: 2px solid #ccc;
-
-    font-size: 16px;
-
-}
-input[type=button]
-{
-    width:50%;
-    margin-left:25%;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-
-}
-input[type=button]:hover
-{
-  box-shadow: 0 2px 5px 0;
-}
-
-input[type=button]:active
-{
-  color:black;
-  box-shadow: 0 2px 5px 0;
-}
-/* Footer */
-footer
-{
-  margin-top: 50%;
-  border-top: 3px #35424a solid;
-
-  width: 100%;
-  background-color: #161616;
-  color: white;
-  text-align: center;
-
-}
-
-footer p{
-  margin:auto;
-}
-/* =========================================================== */
+.banner-sec{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.carousel-inner{border-radius:0 10px 10px 0;}
+.carousel-caption{text-align:left; left:5%;}
+.login-sec{padding: 50px 30px; position:relative;}
+.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+.login-sec .copy-text i{color:#FEB58A;}
+.login-sec .copy-text a{color:#E36262;}
+.login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #DE6262;}
+.login-sec h2:after{content:" "; width:100px; height:5px; background:#FEB58A; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+.btn-login{background: #DE6262; color:#fff; font-weight:600;}
+.banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+.banner-text h2{color:#fff; font-weight:600;}
+.banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
+.banner-text p{color:#fff;}
